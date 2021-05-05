@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
 import People from './People';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [employeenames, setNames] = useState([]);
@@ -34,7 +35,7 @@ function App() {
       {filterPeople.map(people => {
         return (
           <People
-           firstname={people.first} lastname={people.last} email={people.email} address={people.address} />
+           first={people.first} last={people.last} email={people.email} address={people.address} />
         )
       })}
     </div>
