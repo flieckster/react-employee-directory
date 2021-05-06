@@ -30,7 +30,7 @@ function App() {
     <div className="App">
       <div className="search">
         <h1 className="text">Employee Directory</h1>
-        <input type="text" placeholder="search by name" className="input" onChange={handleChange} />
+        <input class="form-group" type="text" placeholder="search by name" className="input" onChange={handleChange} />
       </div>
       {filterPeople.map(people => {
         return (
