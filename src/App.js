@@ -1,26 +1,16 @@
-// import React, { useState, useEffect } from 'react';
-import './App.css';
-// import People from './components/People/People';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Api from './Utils/Api';
-import Header from './components/Header/Header';
+import React from "react";
+import Header from "./components/Header/Header";
+import EmployeesContainer from "./components/Container/EmployeeContainer";
 
 
-function App() {
-
-
-
-
-
-
+const App = () => {
   return (
-    <div className="App">
-      <div className="search">
-<Header />
-{/* <People /> */}
-      </div>
-    </div>
+    <>
+      <Header />
+      <EmployeesContainer />
+    </>
   );
-}
+};
+
 
 export default App;
