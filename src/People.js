@@ -1,14 +1,15 @@
 import React from 'react'
 import './people.css';
 
-const People = ({ first, last, email, address }) => {
+const People = (picture, first, last, email, address) => {
   return (
-    <div className="contianer">
+    <div className="container">
       <div className="row">
-        <p class="col-sm" className="first">First Name: {first} </p>
-        <p class="col-sm" className="last">Last Name: {last} </p>
-        <p class="col-sm" className="email">Email: {email} </p>
-        <p class="col-sm" className="address">Address: {address} </p>
+        <p className="col-sm picture">Profile Pic: {picture} </p>
+        <p className="col-sm first">First Name: {first} </p>
+        <p className="col-sm last">Last Name: {last} </p>
+        <p className="col-sm email">Email: {email} </p>
+        <p className="col-sm address">Address: {address} </p>
       </div>
     </div>
 
